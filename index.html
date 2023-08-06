@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+   
+    
+
+<div class="container">
+  
+  <h2 class="registrationHeading">Registration Form</h2>
+    <form id="use" onsubmit="return validateAge()">
+        <div class="name">
+            <i class="fa fa-user"></i>
+            <input required id="use1" type="text"placeholder="First Name" class="name">
+            <span>
+                <i class="fa fa-user"></i>
+                <input required id="use2" type="text"placeholder="Last Name" class="name">
+            </span>
+           
+        </div>
+        <div class="name">
+            <i class="fa fa-envelope email"></i>
+            <input required id ="use3" type="email"placeholder="gmail" class="name">
+         </div>
+         <div class="name">
+            <i class="fa fa-user"></i>
+            <input required id="use4" type="password"placeholder="password" class="name">
+         </div>
+         <div class="name">
+            <i class="fa fa-calendar"></i>
+            <input required id="date" type="date"placeholder="dob" class="name">
+           
+         </div>
+        <div class="name"> <input required type="checkbox" id="accept" name="acceptTerms">
+           <label required for="acceptTerms">I accept all terms and condition</label>
+         <div class="name"><button type="submit">Submit</button></div>
+    
+</div>
+</form>
+<br>
+<div class="ano">
+<h2>Details you have submitted</h2>
+
+<table >
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>email</th>
+    <th>password</th>
+    <th>dob</th>
+    <th>accept term</th>
+    
+  </tr>
+  <tr id="catch">
+  <td>....</td>
+  <td>....</td>
+  <td>....</td>
+  <td>....</td>
+  <td>....</td>
+  <td>.....</td>
+  
+  </tr>
+</table>
+</div>
+
+
+<script src="index.js"></script>
+</body>
+
+</html>
